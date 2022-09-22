@@ -25,7 +25,9 @@ export default function Home() {
 
         </p>
         <p>
-          <Link href={"${assetPrefix}/user/Users"}><a>goto Users</a></Link>
+          <Link href=  {`${assetPrefix}/user/Users`} > 
+          <a>USERS</a>
+          </Link>
         </p>
 
         <div className={styles.grid}>
