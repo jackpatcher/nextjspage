@@ -3,6 +3,8 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
 
+const assetPrefix = '/nextjspage';
+
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -23,7 +25,7 @@ export default function Home() {
 
         </p>
         <p>
-          <Link href="/user/Users"><a>goto Users</a></Link>
+          <Link href={"${assetPrefix}/user/Users"}><a>goto Users</a></Link>
         </p>
 
         <div className={styles.grid}>
@@ -65,7 +67,7 @@ export default function Home() {
         >
           Powered by{' '}
           <span className={styles.logo}>
-            <img src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
+            <img src={"${assetPrefix}/vercel.svg"} alt="Vercel Logo" width={72} height={16} />
           </span>
         </a>
       </footer>
